@@ -15,7 +15,7 @@ const PostCard = ({ gospel }) => {
   };
 
   return (
-    <div className="p-4 bg-gray-900 text-white rounded-lg shadow-lg">
+    <div className="p-4 bg-gray-900 text-white rounded-lg shadow-lg m-10">
       <h3 className="text-xl font-bold">{gospel.day}</h3>
       <p>{gospel.content}</p>
       <div className="flex justify-between items-center mt-4">

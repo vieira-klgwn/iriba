@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import GospelList from '../components/GospelList';
 import NewGospelForm from '../components/NewGospelForm';
+import Navbar from '../components/Navbar';
 
 const Home = () => {
   const [currentWeek, setCurrentWeek] = useState('1'); // Default week
@@ -12,6 +13,8 @@ const Home = () => {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="flex">
       <Sidebar weeks={[1, 2, 3, 4, 5]} setCurrentWeek={setCurrentWeek} />
       <div className="flex-1 p-4">
@@ -20,6 +23,7 @@ const Home = () => {
         <GospelList currentWeek={currentWeek} />
       </div>
     </div>
+    </>
   );
 };
 
